@@ -1,0 +1,300 @@
+.root {
+    -fx-font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.dark-theme {
+    -fx-background-color: linear-gradient(to bottom right, #1a1a1a, #2d2d2d);
+}
+
+.light-theme {
+    -fx-background-color: linear-gradient(to bottom right, #f0f0f0, #ffffff);
+}
+
+.history-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.dark-theme .history-label {
+    -fx-text-fill: #00ccff;
+}
+
+.light-theme .history-label {
+    -fx-text-fill: #0066cc;
+}
+
+.text-field {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-font-size: 24px;
+    -fx-padding: 8;
+}
+
+.dark-theme .text-field {
+    -fx-background-color: rgba(45, 45, 45, 0.7);
+    -fx-text-fill: #ffffff;
+    -fx-border-color: rgba(61, 61, 61, 0.5);
+}
+
+.light-theme .text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-text-fill: #000000;
+    -fx-border-color: rgba(204, 204, 204, 0.5);
+}
+
+.text-area {
+    -fx-font-size: 12px;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 5;
+}
+
+.dark-theme .text-area {
+    -fx-background-color: rgba(45, 45, 45, 0.7);
+    -fx-text-fill: #ffffff;
+    -fx-border-color: rgba(61, 61, 61, 0.5);
+}
+
+.light-theme .text-area {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-text-fill: #000000;
+    -fx-border-color: rgba(204, 204, 204, 0.5);
+}
+
+.dark-theme .text-area .content {
+    -fx-background-color: transparent;
+}
+
+.light-theme .text-area .content {
+    -fx-background-color: transparent;
+}
+
+.button {
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-min-width: 45px;
+    -fx-min-height: 45px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 1);
+    -fx-cursor: hand;
+}
+
+.dark-theme .button {
+    -fx-background-color: linear-gradient(#2d2d2d, #1a1a1a);
+    -fx-border-color: rgba(61, 61, 61, 0.5);
+    -fx-text-fill: #ffffff;
+}
+
+.light-theme .button {
+    -fx-background-color: linear-gradient(#ffffff, #f0f0f0);
+    -fx-border-color: rgba(204, 204, 204, 0.5);
+    -fx-text-fill: #000000;
+}
+
+.button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(0, 102, 204, 0.4), 10, 0, 0, 0);
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.button:pressed {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+.dark-theme .number-button {
+    -fx-background-color: linear-gradient(#333333, #262626);
+    -fx-border-color: rgba(61, 61, 61, 0.5);
+}
+
+.light-theme .number-button {
+    -fx-background-color: linear-gradient(#ffffff, #f5f5f5);
+    -fx-border-color: rgba(204, 204, 204, 0.5);
+}
+
+.dark-theme .operator-button {
+    -fx-background-color: linear-gradient(#404040, #333333);
+    -fx-border-color: rgba(64, 64, 64, 0.5);
+    -fx-text-fill: #00ccff;
+}
+
+.light-theme .operator-button {
+    -fx-background-color: linear-gradient(#f0f0f0, #e6e6e6);
+    -fx-border-color: rgba(204, 204, 204, 0.5);
+    -fx-text-fill: #0066cc;
+}
+
+.dark-theme .scientific-button {
+    -fx-background-color: linear-gradient(#262626, #1a1a1a);
+    -fx-border-color: rgba(51, 51, 51, 0.5);
+    -fx-text-fill: #00ccff;
+}
+
+.light-theme .scientific-button {
+    -fx-background-color: linear-gradient(#e6e6e6, #d9d9d9);
+    -fx-border-color: rgba(204, 204, 204, 0.5);
+    -fx-text-fill: #0066cc;
+}
+
+.scientific-button {
+    -fx-font-size: 11px;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+}
+
+.memory-button {
+    -fx-font-size: 11px;
+    -fx-min-width: 35px;
+    -fx-min-height: 35px;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+
+.dark-theme .memory-button {
+    -fx-background-color: linear-gradient(#1f1f1f, #0f0f0f);
+    -fx-border-color: rgba(45, 45, 45, 0.5);
+    -fx-text-fill: #00ccff;
+}
+
+.light-theme .memory-button {
+    -fx-background-color: linear-gradient(#e6e6e6, #d9d9d9);
+    -fx-border-color: rgba(204, 204, 204, 0.5);
+    -fx-text-fill: #0066cc;
+}
+
+.equals-button {
+    -fx-min-height: 95px;
+    -fx-font-size: 24px;
+}
+
+.dark-theme .equals-button {
+    -fx-background-color: linear-gradient(#0077cc, #005c99);
+    -fx-border-color: rgba(0, 119, 204, 0.5);
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 204, 255, 0.3), 10, 0, 0, 0);
+}
+
+.light-theme .equals-button {
+    -fx-background-color: linear-gradient(#0088ee, #0077cc);
+    -fx-border-color: rgba(0, 102, 204, 0.5);
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 102, 204, 0.3), 10, 0, 0, 0);
+}
+
+.clear-button {
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.dark-theme .clear-button {
+    -fx-background-color: linear-gradient(#cc3300, #992600);
+    -fx-border-color: rgba(204, 51, 0, 0.5);
+    -fx-text-fill: white;
+}
+
+.light-theme .clear-button {
+    -fx-background-color: linear-gradient(#ff4d4d, #ff3333);
+    -fx-border-color: rgba(255, 51, 51, 0.5);
+    -fx-text-fill: white;
+}
+
+.backspace-button {
+    -fx-font-size: 18px;
+}
+
+.dark-theme .backspace-button {
+    -fx-background-color: linear-gradient(#cc6600, #994c00);
+    -fx-border-color: rgba(204, 102, 0, 0.5);
+    -fx-text-fill: white;
+}
+
+.light-theme .backspace-button {
+    -fx-background-color: linear-gradient(#ff9933, #ff8000);
+    -fx-border-color: rgba(255, 128, 0, 0.5);
+    -fx-text-fill: white;
+}
+
+.theme-toggle, .copy-button, .close-button {
+    -fx-min-width: 35px;
+    -fx-min-height: 35px;
+    -fx-background-radius: 17.5;
+    -fx-border-radius: 17.5;
+    -fx-font-size: 16px;
+}
+
+.mode-toggle {
+    -fx-min-width: 60px;
+    -fx-min-height: 30px;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.dark-theme .mode-toggle {
+    -fx-background-color: linear-gradient(#333333, #262626);
+    -fx-border-color: rgba(64, 64, 64, 0.5);
+    -fx-text-fill: #00ccff;
+}
+
+.light-theme .mode-toggle {
+    -fx-background-color: linear-gradient(#f0f0f0, #e6e6e6);
+    -fx-border-color: rgba(204, 204, 204, 0.5);
+    -fx-text-fill: #0066cc;
+}
+
+.dark-theme .theme-toggle {
+    -fx-background-color: linear-gradient(#333333, #262626);
+    -fx-border-color: rgba(64, 64, 64, 0.5);
+    -fx-text-fill: #00ccff;
+}
+
+.light-theme .theme-toggle {
+    -fx-background-color: linear-gradient(#f0f0f0, #e6e6e6);
+    -fx-border-color: rgba(204, 204, 204, 0.5);
+    -fx-text-fill: #0066cc;
+}
+
+.dark-theme .copy-button {
+    -fx-background-color: linear-gradient(#2d2d2d, #1a1a1a);
+    -fx-border-color: rgba(61, 61, 61, 0.5);
+    -fx-text-fill: #00ccff;
+}
+
+.light-theme .copy-button {
+    -fx-background-color: linear-gradient(#ffffff, #f0f0f0);
+    -fx-border-color: rgba(204, 204, 204, 0.5);
+    -fx-text-fill: #0066cc;
+}
+
+.dark-theme .close-button {
+    -fx-background-color: linear-gradient(#cc3300, #992600);
+    -fx-border-color: rgba(204, 51, 0, 0.5);
+    -fx-text-fill: white;
+}
+
+.light-theme .close-button {
+    -fx-background-color: linear-gradient(#ff4d4d, #ff3333);
+    -fx-border-color: rgba(255, 51, 51, 0.5);
+    -fx-text-fill: white;
+}
+
+.close-button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(255, 0, 0, 0.4), 10, 0, 0, 0);
+}
+
+.separator:vertical {
+    -fx-background-color: transparent;
+    -fx-padding: 0 5 0 5;
+}
+
+.dark-theme .separator:vertical .line {
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-width: 0 0 0 1;
+}
+
+.light-theme .separator:vertical .line {
+    -fx-border-color: rgba(0, 0, 0, 0.1);
+    -fx-border-width: 0 0 0 1;
+} 
